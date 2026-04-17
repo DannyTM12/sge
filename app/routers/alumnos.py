@@ -76,9 +76,10 @@ async def _get_perfil(db: AsyncSession, current_user: Usuario) -> PerfilAlumno:
 
 
 def _nombre_completo(user: Usuario) -> str:
-    partes = [user.nombre, user.apellido_paterno]
-    if user.apellido_materno:
-        partes.append(user.apellido_materno)
+    partes = [str(user.nombre), str(user.apellido_paterno)]
+    mat = user.apellido_materno
+    if isinstance(mat, str) and mat:
+        partes.append(mat)
     return " ".join(partes)
 
 
