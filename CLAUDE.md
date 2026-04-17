@@ -207,8 +207,8 @@ SUPERADMIN_PASSWORD=cambia_esto_en_produccion
 - [x] Middleware de auth, RBAC y tenant isolation
 - [x] Router /auth (login, refresh, logout, logout-all, forgot-password, reset-password)
 - [x] Router /admin (CRUD ciclos, grupos, materias, inscripciones, parciales, calificaciones, justificantes, dashboard, auditoría)
-- [ ] Router /profesores
-- [ ] Router /alumnos
+- [x] Router /profesores
+- [x] Router /alumnos
 - [ ] Router /ia
 - [ ] AI Worker
 - [ ] Frontend React
