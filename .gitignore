@@ -1,0 +1,47 @@
+# ── Secretos y entorno ──────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Modelos de IA — se almacenan fuera del repo ─────────────
+ai_worker/models/*.pkl
+ai_worker/models/*.joblib
+ai_worker/models/*.json
+!ai_worker/models/.gitkeep
+
+# ── Frontend ─────────────────────────────────────────────────
+node_modules/
+sge-frontend/dist/
+sge-frontend/.vite/
+
+# ── Base de datos local ──────────────────────────────────────
+*.db
+*.sqlite3
+
+# ── Podman / Docker ──────────────────────────────────────────
+.podman/
+
+# ── IDE ──────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ── OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
