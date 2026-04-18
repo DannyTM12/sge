@@ -211,7 +211,7 @@ SUPERADMIN_PASSWORD=cambia_esto_en_produccion
 - [x] Router /alumnos
 - [ ] Router /ia
 - [ ] AI Worker
-- [ ] Frontend React
+- [x] Frontend React (React 19 + TypeScript + Vite + TailwindCSS + React Query + Zustand)
 
 ---
 
